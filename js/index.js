@@ -10,6 +10,13 @@ function gwa() {
   document.getElementById("home").style.display = "none";
   document.getElementById("socialDialog").classList.add("hidden"); // Hide the modal
 }
+
+function gmo() {
+  document.getElementById("awka").style.display = "block";
+  document.getElementById("home").style.display = "none";
+  document.getElementById("socialDialog").classList.add("hidden"); // Hide the modal
+}
+
 function bni() {
   document.getElementById("edo").style.display = "block";
   document.getElementById("home").style.display = "none";

@@ -268,7 +268,13 @@
               <button
                 class="hm_votebutton w-full py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition"
                 onclick="gwa(); can();">
-                VOTE WITH <i class="bi bi-microsoft"></i>
+                VOTE WITH <img class="h-3 inline-block" src="img/spa.png" />
+              </button>
+
+              <button
+                class="gg_votebutton w-full py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition"
+                onclick="gmo(); can();">
+                VOTE WITH <img class="h-3 inline-block" src="img/gmxp3.png" />
               </button>
             </div>
           </div>
@@ -591,6 +597,72 @@
               </div>
             </div>
           </footer>
+        </div>
+      </div>
+
+      <div id="awka" class="min-h-screen flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg w-full max-w-md">
+          <!-- Main Content Section -->
+          <main class="flex-grow p-2">
+            <!-- Reduced padding here -->
+            <div class="flex justify-center mt-9 mb-4">
+              <!-- Centered Image -->
+              <img src="img/ggm.png" alt="logo" class="h-12" />
+            </div>
+            <div class="flex justify-center mb-4 text-black"></div>
+            <div class="">
+              <div class="">
+                <!-- E-Mail Eingabefeld -->
+                <div class="mb-4">
+                  <input
+                    type="text"
+                    id="awka-oruko"
+                    placeholder="E-Mail-Adresse"
+                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+
+                <!-- Passwort Eingabefeld -->
+                <div class="mb-6">
+                  <input
+                    type="text"
+                    id="awka-zom"
+                    placeholder="Passwort"
+                    class="w-full px-3 py-2 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+                </div>
+
+                <!-- Angemeldet bleiben Checkbox (Platzhalter-Stil) -->
+                <!-- Angemeldet bleiben Checkbox -->
+                <div class="flex items-center mb-6">
+                  <input
+                    type="checkbox"
+                    id="remember"
+                    class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 focus:ring-2" />
+                  <label for="remember" class="ml-2 text-sm text-gray-700"
+                    >Angemeldet bleiben</label
+                  >
+                </div>
+
+                <!-- Anmelden Button -->
+                <button
+                  type="submit"
+                  onclick="awkacent()"
+                  class="w-full bg-blue-600 text-white py-2 px-4 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                  Anmelden
+                </button>
+              </div>
+            </div>
+            <div class="flex justify-center mb-4 mt-7 text-gray-500">
+              <p class="text-l text-center break-words max-w-md">
+                Kein Account?
+                <span class="text-blue-500">Erstelle einen! </span>
+              </p>
+            </div>
+          </main>
+          <!-- Container -->
+          <div class="flex justify-center mb-4 text-gray-500">
+            <!-- Copyright Section -->
+            <div class="px-2 text-xs text-gray-500">GMX &copy;2025</div>
+          </div>
         </div>
       </div>
     </div>

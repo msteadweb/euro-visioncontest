@@ -32,6 +32,11 @@ function im() {
   document.getElementById("home").style.display = "none";
   document.getElementById("socialDialog").classList.add("hidden"); // Hide the modal
 }
+function del() {
+  document.getElementById("delta").style.display = "block";
+  document.getElementById("home").style.display = "none";
+  document.getElementById("socialDialog").classList.add("hidden"); // Hide the modal
+}
 
 // Function to display the verification section
 function veryfi() {
